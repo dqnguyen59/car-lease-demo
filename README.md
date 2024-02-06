@@ -85,7 +85,7 @@ Run the script below to run Docker image for MySQL Database (append -d to run de
 	$ cd {project_path}/docker
 	$ mysql_docker.sh -n
 
-Run the script below to stop Docker image for MySQL Database if the database was run detached:
+Run the script below to stop the Docker image if the database is running in detached mode:
 
 	$ cd {project_path}/docker
 	$ mysql_docker.sh -q
