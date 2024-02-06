@@ -122,6 +122,20 @@ Open http://localhost:8761 on any browser. You should see all instances here. Ch
 	
 Open http://localhost:9000/actuator/gateway/routes on any browser. You should see all defined redirection paths.
 
+Run three authentication-service instances, each with different port number:
+
+	$ cd {project_path}/services/authentication-service
+	$ ./gradlew clean
+	$ ./gradlew bootJar
+	$ SERVER_PORT=4001 java -jar build/libs/authentication-service-0.0.1-SNAPSHOT.jar
+	$ SERVER_PORT=4002 java -jar build/libs/authentication-service-0.0.1-SNAPSHOT.jar
+	$ SERVER_PORT=4003 java -jar build/libs/authentication-service-0.0.1-SNAPSHOT.jar
+	
+Open http://localhost:8001/api/v1/user/greet on any browser.
+
+	Displays:
+		Welcome from 'USER-SERVICE'! ; Port: 8001
+	
 Run three user-service instances, each with different port number:
 
 	$ cd {project_path}/services/user-service
