@@ -49,12 +49,12 @@ The following path or end points are redirected to instances:
 	Path '/api/v1/car/**'		-> Car-service
 	Path '/api/v1/customer/**'	-> Customer-service
 
-<b>Auth-Service instances</b>
+<b>Auth-Service</b>
 
 Multiple Auth-Service instances are running concurrently in the range of ports 4XXX.
 
 
-<b>User-Service instances</b>
+<b>User-Service</b>
 
 Multiple User-Service instances are running concurrently in the range of ports 8XXX.
 
