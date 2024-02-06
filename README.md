@@ -22,7 +22,7 @@ For convenience, a simple sequence diagram is shown here to understand how the g
 
 5) The gateway redirect the call to one of the Car-Service instances.
 
-6) The car service needs to know if the user has access rights to update the car. So it sends an API call to the Gateway-Service "GET: /api/v1/user/validatetoken/{token}".
+6) The car service needs to know if the user has access rights to update the car. So it sends an API call to the Gateway-Service "GET: /api/v1/auth/validatetoken/{token}".
 
 7) The gateway redirect the api call to one of the Auth-Service instances.
 
