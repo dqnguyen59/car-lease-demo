@@ -10,7 +10,7 @@ Please note that User-Service, Car-Service and Customer-Service do not know how 
 
 <img src="docs/car-lease-demo-micro-services.draw.io-Sequence.png">
 
-For convenience, a simple sequence diagram is shown here to understand how the gateway redirects api calls.
+For convenience, a simple sequence diagram is shown here to understand how the gateway redirects api calls with a token.
 
 1) First the user must be signed in with username and password via the gateway. The api call is "POST: /api/v1/auth/signin".
 
