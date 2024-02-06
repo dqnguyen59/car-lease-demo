@@ -95,7 +95,7 @@ The database use default port 3306.
 The default username is 'root' and the default password is 'super'.
 This file 'application.properties' also contains this username and password.
 
-If you don't have Linux then build docker image manually (you must install docker first on your machine before continue):
+If you don't have Linux, then you can build docker image manually (you must install docker first on your machine before continue):
 
 	$ docker pull mysql:8.0
 	$ docker run --name mysql8 -p 3306:3306 -e MYSQL_ROOT_PASSWORD=super mysql:8.0
