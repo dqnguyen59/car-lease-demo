@@ -1,6 +1,6 @@
 # Car Lease Demo with Springboot
 
-This demo demonstrate use the Springboot microservices architecture with a car lease demo as an example.
+This demo demonstrate Springboot microservices architecture with a car lease demo as an example.
 
 <img src="docs/car-lease-demo-micro-services.draw.io.png">
 
