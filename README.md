@@ -116,7 +116,7 @@ Open http://localhost:8761 on any browser.
 	
 Open http://localhost:9000/actuator on any browser.
 
-Run three user-service instances with different port numbers each:
+Run three user-service instances, each with different port numbers:
 
 	$ cd {project_path}/services/user-service
 	$ ./gradlew clean
@@ -150,7 +150,7 @@ If you see different ports, then the gateway redirect to user-service instances 
 		or
 		Welcome from 'USER-SERVICE'! ; Port: 8003
 
-Run three car-service instances with different port numbers each:
+Run three car-service instances, each with different port numbers:
 
 	$ cd {project_path}/services/car-service
 	$ ./gradlew clean
@@ -184,7 +184,7 @@ If you see different ports, then the gateway redirect to user-service instances 
 		or
 		Welcome from 'CAR-SERVICE'! ; Port: 7003
 
-Run three customer-service instances with different port numbers each:
+Run three customer-service instances, each with different port numbers:
 
 	$ cd {project_path}/services/customer-service
 	$ ./gradlew clean
