@@ -6,7 +6,7 @@ This demo demonstrate use the Springboot microservices architecture with a car l
 
 The picture above is a simple representation of the microservice architecture.
 
-Please note that Car-Service and Customer-Service do not know how to handle user authorization. This is only done by the Auth-Service. The Atuh-Service is able to extract the username from a security token. The username is then looked up in the database to obtain the user details such as user roles. These rolls are returned to the Car-Service. Then, the Car-Service can process the user request with access role correctly. Below is explained with sequence diagram how the the Car-Service can be access correctly without the need to validate the user.
+Please note that Car-Service and Customer-Service do not know how to handle user authorization. This is only done by the Auth-Service. The Atuh-Service is able to extract the username from a security token. The username is then looked up in the database to obtain the user details such as user roles. These rolls are returned to the Car-Service. Then, the Car-Service can process the user request with access role correctly. Below is explained with sequence diagram how the the Car-Service can be accessed correctly without the need to validate the user.
 
 <img src="docs/car-lease-demo-micro-services.draw.io-Sequence.png">
 
@@ -93,7 +93,7 @@ Run the script below to stop Docker image for MySQL Database:
 The database use default port 3306.
 
 The default username is 'root' and the default password is 'super'.
-This files 'application.properties' also contains this username and password.
+This file 'application.properties' also contains this username and password.
 
 If you don't have Linux then build docker image manually (you must install docker first on your machine before continue):
 
