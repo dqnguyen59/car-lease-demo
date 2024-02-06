@@ -6,7 +6,7 @@ This demo demonstrate Springboot microservices architecture with a car lease dem
 
 The picture above is a simple representation of the microservice architecture.
 
-Please note that Car-Service and Customer-Service do not know how to handle user authorization. This is only done by the Auth-Service. The Auth-Service is able to extract the username from a security token. The username is then looked up in the database to obtain the user details such as user roles. These rolls are returned to the Car-Service. Then, the Car-Service can process the user request with access role correctly. Below is explained with sequence diagram how the the Car-Service can be accessed correctly without the need to validate the user again.
+Please note that User-Service, Car-Service and Customer-Service do not know how to handle user authorization. This is only done by the Auth-Service. The Auth-Service is able to extract the username from a security token. The username is then looked up in the database to obtain the user details such as user roles. These rolls are returned to the Car-Service. Then, the Car-Service can process the user request with access role correctly. Below is explained with sequence diagram how the the Car-Service can be accessed correctly without the need to validate the user again.
 
 <img src="docs/car-lease-demo-micro-services.draw.io-Sequence.png">
 
