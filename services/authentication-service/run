@@ -1,0 +1,14 @@
+#!/bin/bash
+
+re='^[0-9]+$'
+
+port=$1
+
+if ! [[ $port =~ $re ]] ; then
+	./gradlew clean
+	./gradlew bootJar
+else
+	SERVER_PORT=$1 java -jar build/libs/authentication-service-0.0.1-SNAPSHOT.jar
+fi
+
+

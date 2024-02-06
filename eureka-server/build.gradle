@@ -1,0 +1,51 @@
+plugins {
+	id 'java'
+	id 'war'
+	id 'org.springframework.boot' version '3.2.2'
+	id 'io.spring.dependency-management' version '1.1.4'
+}
+
+group = 'org.smartblackbox'
+version = '0.0.1-SNAPSHOT'
+
+java {
+	sourceCompatibility = '21'
+}
+
+javadoc {
+    destinationDir = file("${buildDir}/docs/javadoc")
+}
+
+configurations {
+	compileOnly {
+		extendsFrom annotationProcessor
+	}
+}
+
+repositories {
+	mavenCentral()
+}
+
+ext {
+	set('springCloudVersion', "2023.0.0")
+}
+
+dependencies {
+
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+    
+	// Springboot framework Eureka client Service2service communication    
+	// implementation 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-client'
+	implementation 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-server'
+
+	// https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-javadoc-plugin
+	implementation 'org.apache.maven.plugins:maven-javadoc-plugin:3.6.3'
+
+}
+
+dependencyManagement {
+	imports {
+		mavenBom "org.springframework.cloud:spring-cloud-dependencies:${springCloudVersion}"
+	}
+}
+
