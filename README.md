@@ -78,11 +78,13 @@ Docker MySQL is used to create the MySQL database. For this demonstration and si
 Run the script below to build Docker image for MySQL Database (you must install docker first on your machine before continue):
 
 	$ cd {project_path}/docker
+ 
 	$ mysql_docker.sh -b
 
 Run the script below to run Docker image for MySQL Database (append -d to run detached):
 
 	$ cd {project_path}/docker
+ 
 	$ mysql_docker.sh -n
 
 Run the script below to stop the Docker image if the database is running in detached mode:
