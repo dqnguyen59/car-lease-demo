@@ -116,6 +116,8 @@ Open http://localhost:8761 on any browser.
 	
 Open http://localhost:9000/actuator on any browser.
 
+Run three user-service instances:
+
 	$ cd {project_path}/services/user-service
 	$ ./gradlew clean
 	$ ./gradlew bootJar
@@ -139,6 +141,7 @@ Open http://localhost:8003/api/v1/user/greet on any browser.
 		Welcome from 'USER-SERVICE'! ; Port: 8003
 	
 Open http://localhost:9000/api/v1/user/greet on any browser and refresh it several times.
+If you see different ports, then the gateway redirect to user-service instances correctly.
 
 	Displays:
 		Welcome from 'USER-SERVICE'! ; Port: 8001
@@ -146,6 +149,8 @@ Open http://localhost:9000/api/v1/user/greet on any browser and refresh it sever
 		Welcome from 'USER-SERVICE'! ; Port: 8002
 		or
 		Welcome from 'USER-SERVICE'! ; Port: 8003
+
+Run three car-service instances:
 
 	$ cd {project_path}/services/car-service
 	$ ./gradlew clean
@@ -170,6 +175,7 @@ Open http://localhost:7003/api/v1/car/greet on any browser.
 		Welcome from 'CAR-SERVICE'! ; Port: 7003
 	
 Open http://localhost:9000/api/v1/car/greet on any browser and refresh it several times.
+If you see different ports, then the gateway redirect to user-service instances correctly.
 
 	Displays:
 		Welcome from 'CAR-SERVICE'! ; Port: 7001
@@ -177,7 +183,9 @@ Open http://localhost:9000/api/v1/car/greet on any browser and refresh it severa
 		Welcome from 'CAR-SERVICE'! ; Port: 7002
 		or
 		Welcome from 'CAR-SERVICE'! ; Port: 7003
-	
+
+Run three customer-service instances:
+
 	$ cd {project_path}/services/customer-service
 	$ ./gradlew clean
 	$ ./gradlew bootJar
@@ -201,6 +209,7 @@ Open http://localhost:6003/api/v1/customer/greet on any browser.
 		Welcome from 'CUSTOMER-SERVICE'! ; Port: 6003
 	
 Open http://localhost:9000/api/v1/customer/greet on any browser and refresh it several times.
+If you see different ports, then the gateway redirect to user-service instances correctly.
 
 	Displays:
 		Welcome from 'CUSTOMER-SERVICE'! ; Port: 6001
@@ -208,7 +217,7 @@ Open http://localhost:9000/api/v1/customer/greet on any browser and refresh it s
 		Welcome from 'CUSTOMER-SERVICE'! ; Port: 6002
 		or
 		Welcome from 'CUSTOMER-SERVICE'! ; Port: 6003
-	
+
 
 Swagger-UI:
 
