@@ -243,3 +243,9 @@ H2-Database Console, if H2-Database is used:
 	jdbc url: jdbc:h2:mem:testdb
 	Password is blank for now
 
+#TODO
+
+	- Fine tuning business logic on all services.
+ 	- Add Session manager
+
+  
