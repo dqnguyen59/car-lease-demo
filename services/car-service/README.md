@@ -47,10 +47,10 @@ Change the gateway details in the application.properties if needed:
 _______________________________________________________________________________
 ## Development setup
 
-Install OpenJDK 17
-Minimum required Java version is 17:
+Install OpenJDK 21
+Minimum required Java version is 21:
 
-    sudo apt install openjdk-17-jdk
+    sudo apt install openjdk-21-jdk
 
 Install Eclipse IDE Java EE:
     
