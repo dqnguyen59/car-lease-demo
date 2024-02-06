@@ -100,6 +100,8 @@ If you don't have Linux then build docker image manually (you must install docke
 	$ docker pull mysql:8.0
 	$ docker run --name mysql8 -p 3306:3306 -e MYSQL_ROOT_PASSWORD=super mysql:8.0
 
+The database is now up and running.
+
 Install OpenJDK 21:
 
     $ sudo apt install openjdk-21-jdk
@@ -111,14 +113,14 @@ Follow below the instructions and run each java application in separate terminal
 	$ ./gradlew bootJar
 	$ java -jar build/libs/eureka-server-0.0.1-SNAPSHOT.jar
 	
-Open http://localhost:8761 on any browser.
+Open http://localhost:8761 on any browser. You should see all instances here. Check here later, once all instances are started.
 	
 	$ cd {project_path}/gateway
 	$ ./gradlew clean
 	$ ./gradlew bootJar
 	$ java -jar build/libs/gateway-0.0.1-SNAPSHOT.jar
 	
-Open http://localhost:9000/actuator on any browser.
+Open http://localhost:9000/actuator/gateway/routes on any browser. You should see all defined redirection paths.
 
 Run three user-service instances, each with different port number:
 
@@ -232,7 +234,7 @@ if credential are required:
 	Username: root
 	Password: secret
 
-H2-Database Console:
+H2-Database Console, if H2-Database is used:
 
 	Open http://localhost:xxxx/h2-console
 
