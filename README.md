@@ -100,6 +100,10 @@ If you don't have Linux then build docker image manually (you must install docke
 	$ docker pull mysql:8.0
 	$ docker run --name mysql8 -p 3306:3306 -e MYSQL_ROOT_PASSWORD=super mysql:8.0
 
+Install OpenJDK 21:
+
+    $ sudo apt install openjdk-21-jdk
+
 Follow below the instructions and run each java application in separate terminals.
 
 	$ cd {project_path}/eureka-server
