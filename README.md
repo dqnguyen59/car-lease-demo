@@ -26,7 +26,7 @@ For convenience, a simple sequence diagram is shown here to understand how the g
 
 7) The gateway redirect the api call to one of the Auth-Service instances.
 
-8) The User-Service validates the token and returns the user id and roles to the Car-Service, if the token was extracted successfully.
+8) The Auth-Service validates the token and returns the user id and roles to the Car-Service, if the token was extracted successfully.
 
 9) The Car-Service now checks if the received user role contains "ROLE_BROKER". If it does, then returns the updated car details, otherwise returns an error message with HTTP status code "ACCESS DENIED".
 
