@@ -14,9 +14,9 @@ For convenience, a simple sequence diagram is shown here to understand how the g
 
 1) First the user must be signed in with username and password via the gateway. The api call is "POST: /api/v1/auth/signin".
 
-2) The gateway redirect the call to one of the User-Service instances.
+2) The gateway redirect the call to one of the Auth-Service instances.
 
-3) The User-Service has accepted the sign in and returns a security token.
+3) The Auth-Service has accepted the sign in and returns a security token.
 
 4) The user wants to update the car details. The api call is then "PUT: /api/v1/car/{id}" and send it with the received security token in the HTTP header.
 
